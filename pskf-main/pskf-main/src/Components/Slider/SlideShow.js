@@ -5,12 +5,13 @@ import './SlideShow.css'; // Import your CSS file
 import feed1 from './pics/feed1.webp';
 import feed2 from './pics/feed2.webp';
 import feed3 from './pics/feed3.webp';
+import feed4 from './pics/feed4.jpg';
 
 
 const SlideShow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [feed1, feed2, feed3]; // Replace image URLs with imported images
+  const images = [feed1, feed2, feed3,feed4]; // Replace image URLs with imported images
 
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
